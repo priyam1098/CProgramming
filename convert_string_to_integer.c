@@ -15,3 +15,8 @@ int main(){
     printf("%d",n);
     return 0;
 }
+//USE CAN ALSO USE
+/*
+char a[]="123456789";
+long int n=atoi(a);
+*/
