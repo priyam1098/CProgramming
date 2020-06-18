@@ -1,12 +1,19 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-//define prototype it is globally accessible
+//define --prototype-- it is globally accessible
 struct ex{
     int i;
-    struct ex *left;//left pointer of node
+    struct ex *left;//left pointer of node    
     struct ex *right;//right pointer of node
 };
+/*you can't assign the value into prototype it will give compiler error
+struct ex{
+    int i=0;  //this is invalid   error: expected ‘:’, ‘,’, ‘;’, ‘}’ or ‘__attribute__’ before ‘=’ token
+    struct ex *left;
+    struct ex *right;
+};
+*/
 void main(){
     
     struct ex *head,*second,*third,*t;//define sruct node pointer to hold memory
