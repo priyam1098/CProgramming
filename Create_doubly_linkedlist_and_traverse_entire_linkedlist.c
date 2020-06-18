@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-//define --prototype-- it is globally accessible
+//define --prototype-- it is globally accessible(Blueprint)
 struct ex{
     int i;
     struct ex *left;//left pointer of node    
@@ -40,4 +40,9 @@ void main(){
         printf("%d ",t->i);
         t=t->right;
     }
+    //to free the all memory of taken by nodes
+    free(t);
+    free(head);
+    free(second);
+    free(third);
 }
